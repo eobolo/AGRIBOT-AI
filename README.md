@@ -44,7 +44,7 @@ The repository is organized into the following directories and files for clarity
 
 ## Data Sourcing
 
-The dataset used in this project is sourced from the KisanVaani agriculture QA dataset [1], available on Hugging Face. The files are integrated into the project workflow via the Jupyter notebooks and Python scripts, with no separate data directory required as the dataset is dynamically loaded during execution.
+The dataset used in this project is sourced from the KisanVaani agriculture QA dataset, available on Hugging Face. The files are integrated into the project workflow via the Jupyter notebooks and Python scripts, with no separate data directory required as the dataset is dynamically loaded during execution.
 ![Word Cloud Answers](images/word_cloud_answer.png)
 ![Word Cloud Questions](images/word_cloud_question.png)
 
@@ -154,5 +154,5 @@ Key experiments highlighted challenges, such as a zero division error with SGD a
 
 
 
-**References:**
-[1] KisanVaani Agriculture QA Dataset: [Dataset](https://huggingface.co/datasets/KisanVaani/agriculture-qa-english-only)
+## **References:**
+KisanVaani Agriculture QA Dataset: [Dataset](https://huggingface.co/datasets/KisanVaani/agriculture-qa-english-only)
