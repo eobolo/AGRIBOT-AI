@@ -15,7 +15,10 @@ load_dotenv()
 app = Flask(__name__)
 app.config.from_pyfile('config.py')
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
-app.config['UPLOAD_FOLDER'] = 'static/profile_pics' # For profile pictures
+app.config['UPLOAD_FOLDER'] = os.path.join(app.root_path, 'static', 'profile_pics') # Define absolute path
+
+# Ensure the upload directory exists at app startup
+os.makedirs(app.config['UPLOAD_FOLDER'], exist_ok=True)
 
 # Database configuration (always SQLite for ephemeral deployment)
 instance_path = os.path.join(app.root_path, 'instance')
