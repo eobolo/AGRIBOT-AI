@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to AgriBot</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="welcome-popup">
+        <div class="welcome-content">
+            <h2>Welcome to AgriBot! 🌱</h2>
+            <div class="welcome-info">
+                <p>Your AI-powered agricultural assistant is here to help you with:</p>
+                <ul>
+                    <li><i class="fas fa-seedling" style="color: #2e7d32;"></i> Crop management and best practices</li>
+                    <li><i class="fas fa-cloud-sun-rain" style="color: #1976d2;"></i> Weather and climate information</li>
+                    <li><i class="fas fa-bug" style="color: #c62828;"></i> Pest control and disease management</li>
+                    <li><i class="fas fa-tractor" style="color: #f57c00;"></i> Farming equipment and technology</li>
+                    <li><i class="fas fa-chart-line" style="color: #7b1fa2;"></i> Market trends and pricing</li>
+                </ul>
+                <p>Feel free to ask any questions about agriculture, and I'll do my best to help!</p>
+            </div>
+            <button class="btn" onclick="closeWelcomePopup()">Get Started</button>
+        </div>
+    </div>
+    <script>
+        function closeWelcomePopup() {
+            document.querySelector('.welcome-popup').style.display = 'none';
+        }
+    </script>
+</body>
+</html> 
