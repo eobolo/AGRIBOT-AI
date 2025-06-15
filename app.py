@@ -14,6 +14,12 @@ load_dotenv()
 
 app = Flask(__name__)
 app.config.from_pyfile('config.py')
+app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
+app.config['UPLOAD_FOLDER'] = 'static/profile_pics' # For profile pictures
+
+# Database configuration (always SQLite for ephemeral deployment)
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///' + os.path.join(app.root_path, 'instance', 'site.db')
+
 db = SQLAlchemy(app)
 migrate = Migrate(app, db)
 login_manager = LoginManager()
