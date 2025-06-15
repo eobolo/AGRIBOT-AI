@@ -6,6 +6,12 @@
 
 This repository contains the code and documentation for the AGRIBOT AI project, an agriculture domain-specific chatbot designed to provide accurate and relevant responses to farming-related queries. The project leverages a fine-tuned T5 Transformer model, utilizing the KisanVaani agriculture QA dataset [1], which consists of 22,615 English-only question-answer pairs focused on topics such as fertilizer use and crop management. The goal was to optimize model performance through extensive experimentation with various optimizers (SGD, Adam, Nadam) and hyperparameters, culminating in a Flask-based web application with features like conversation management and an upgrade system. The best-performing model, T5 with Nadam at 21 epochs, achieved a BLEU score of 0.6558 and a ROUGE score of 0.9303, though challenges such as optimizer convergence issues and resource constraints were encountered, suggesting areas for further refinement.
 
+## Live Site
+
+Access the live AGRIBOT AI application on Render here: [https://agribot-ai.onrender.com/](https://agribot-ai.onrender.com/)
+
+**Important Note on Data Persistence:** This live deployment uses an ephemeral SQLite database. This means all user data (accounts, conversations, profile pictures) will be reset if the Render service restarts, rebuilds (e.g., on a new code push), or experiences a period of inactivity (especially on the free tier). Data is not persistent across sessions or deployments.
+
 ## Repository Structure
 
 The repository is organized into the following directories and files for clarity and reproducibility:
@@ -22,6 +28,7 @@ The repository is organized into the following directories and files for clarity
     *   `agribot.py`, `agribot2.py`: Core implementation files.
 *   `static/`: Static assets for the web application.
     *   `script.js`, `style.css`: JavaScript and CSS files for UI functionality and styling.
+    *   `agribot.jpeg`: Application icon/favicon.
 *   `templates/`: HTML templates for the web interface.
     *   `chat.html`, `login.html`, `signup.html`, `settings.html`, `upgrade.html`, `welcome_popup.html`: Templates for various pages.
 *   `instance/`: Database storage.
@@ -144,4 +151,4 @@ Key experiments highlighted challenges, such as a zero division error with SGD a
 
 
 **References:**
-[1] KisanVaani Agriculture QA Dataset: [Dataset] (https://huggingface.co/datasets/KisanVaani/agriculture-qa-english-only)
+[1] KisanVaani Agriculture QA Dataset: [Dataset](https://huggingface.co/datasets/KisanVaani/agriculture-qa-english-only)
