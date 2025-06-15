@@ -142,6 +142,10 @@ Key experiments highlighted challenges, such as a zero division error with SGD a
 *   **User:** "What is the best fertilizer for wheat?"
 *   **Response:** "Wheat requires balanced fertilization with a high ratio of nitrogen (N), phosphorus (P), and potassium (K), such as NPK (23:23:0) or compound fertilizer like CAN (calcium ammonium nitrate) that has Nitrogen and Calcium."
 
+**Example 2: Out-of-Domain Query**
+*   **User:** "What's the weather like?"
+*   **Response:** "Out-of-domain: I can only answer agriculture questions."
+
 **Example 3: Crop Management**
 *   **User:** "How to manage pests in rice fields?"
 *   **Response:** "To manage pests in rice fields, use integrated pest management with neem oil sprays and monitor for brown plant hoppers regularly."
