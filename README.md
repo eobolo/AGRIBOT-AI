@@ -141,9 +141,7 @@ Key experiments highlighted challenges, such as a zero division error with SGD a
 
 ## Demo Video Link
 
-[Placeholder: Insert 5–10 minute demo video showcasing the chatbot's functionality, user interactions, and key insights.]
 
----
 
 **References:**
 [1] KisanVaani Agriculture QA Dataset: [Link to Hugging Face dataset if available] (You might want to replace this with the actual link to the dataset on Hugging Face if you have it)
