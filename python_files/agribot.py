@@ -266,3 +266,14 @@ question = "What is the best fertilizer for wheat?"
 response = generate_response(question)
 print(f"Question: {question}\nResponse: {response}")
 
+def chatbot_interaction():
+    print("Hello! I'm an agriculture chatbot. Ask me anything about agriculture. Type 'stop' to end the conversation.")
+    while True:
+        user_input = input("You: ")
+        if user_input.lower() == 'stop':
+            print("Chatbot: Goodbye!")
+            break
+        response = generate_response(user_input)
+        print(f"Chatbot: {response}")
+
+chatbot_interaction()
