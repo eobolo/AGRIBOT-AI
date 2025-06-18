@@ -8,7 +8,7 @@ Original file is located at
 
 # Install Dependencies
 
-My Idea is to build a **Agriculture domain specific** **Chatbot** but my architecture is to fine-tune a **transformer** model.So the first things to do is to install **transformers** for **T5** model which I would be using as a starting point, **datasets** for data, **evaluate** for metrics, and **streamlit** for UI. It also checks GPU availability, which is crucial for efficient training on Kaggle’s T4 GPU.
+My Idea is to build a **Agriculture domain specific** **Chatbot** designed to provide accurate and relevant responses to farming-related queries for students and farmers with little or no knowledge of extensive agricultural practices and methods, but my architecture is to fine-tune a **transformer** model.So the first things to do is to install **transformers** for **T5** model which I would be using as a starting point, **datasets** for data, **evaluate** for metrics, and **streamlit** for UI. It also checks GPU availability, which is crucial for efficient training on Kaggle’s T4 GPU.
 """
 
 # Install and update required libraries
